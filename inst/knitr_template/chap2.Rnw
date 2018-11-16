@@ -1,0 +1,5 @@
+\chapter{Chapter 2}
+
+\section{Second chapter info}
+
+This is the second chapter of my dissertation! Thanks to \cite{agresti2003} for all the encouragement!

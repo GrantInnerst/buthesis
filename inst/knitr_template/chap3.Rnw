@@ -1,0 +1,5 @@
+\chapter{Chapter 3}
+
+\section{Third chapter info}
+
+This is the third chapter of my dissertation!

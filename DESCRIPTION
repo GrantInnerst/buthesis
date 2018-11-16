@@ -1,0 +1,12 @@
+Package: buthesis
+Type: Package
+Title: Latex, Knitr, and RMarkdown templates for Baylor Ph.D. Thesis 
+Version: 0.1.0
+Author: Grant Innerst <grant.innerst@baylor.edu>
+Maintainer: Grant Innerst <grant.innerst@baylor.edu>
+Description: This package contains latex and knitr templates for the statistical science department 
+    that adhere to the Baylor Graduate School guidlines. The templates are located in the inst/ directory.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0

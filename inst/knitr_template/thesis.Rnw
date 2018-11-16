@@ -1,0 +1,81 @@
+\documentclass{phd}
+\voffset=-.6875in
+\setlength{\textheight}{9.65in}
+
+%% packages
+\usepackage{amsfonts, amssymb, amsmath, amsthm, latexsym, natbib, graphicx,
+            rotating, float, listings, booktabs, url, bm, subfig, gensymb,
+            multirow, array, dcolumn, framed}
+\usepackage[linesnumbered,boxed]{algorithm2e}
+\newcolumntype{d}[1]{D{.}{\cdot}{#1} }
+
+%% input the macros
+% \input{macros}
+
+%% do figs pathing -- make sure you have a folder named 'figures' in the directory
+%\graphicspath{{figures/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Front matter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Your Title Goes Here}
+\author{Your Name}
+\degrees{My Degrees before this!}  % degrees held before this Ph.D.
+
+% your committee members and degree in alphabetical order
+% I believe external members go last regardless of alphabetical ordering
+
+\mentor{My Advisor, Ph.D.}
+\readerThree{Other Reader, Ph.D.}
+\readerFour{Other Reader, Ph.D.}
+\readerFive{Other Reader, Ph.D.}
+\readerSix{Other Reader, Ph.D.}
+
+\confDate{The conferral date}   % month and year of actual graduation
+
+\makeCopyrightPage
+
+\graduateDean{Graduate Dean, Ph.D.}
+\deptChair{Department Chair, Ph.D.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ABSTRACT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\abstract{This is my abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DEDICATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\dedication{My dedications}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ACKNOWLEDGEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\acknowledgements{These are my acknowledgements}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT BODY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+<<child="chap1.Rnw">>=
+
+@
+
+<<child="chap2.Rnw">>=
+
+@
+
+<<child="chap3.Rnw">>=
+
+@
+
+\newpage
+\bibliography{thesis}
+\bibliographystyle{apalike}
+\end{document}
