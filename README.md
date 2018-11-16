@@ -1,5 +1,6 @@
 Baylor University Thesis Templates
 ====================================
+This package was inspired by the `thesisdown` and `ucbthesis` packages
 
 Warning
 -----------
@@ -14,7 +15,7 @@ Installation
 --------------
 
 To install this as an R package, and therefore access the templates, as well as
-the helper functions `create_knitr_thesis` and `create_knitr_thesis`, you can either clone this repo,
+the helper functions `create_knitr_thesis` and `create_latex_thesis`, you can either clone this repo,
 and build the package manually, or use `devtools` via:
 
 ```
