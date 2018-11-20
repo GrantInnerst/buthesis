@@ -28,12 +28,12 @@ Usage
 
 ### Knitr
 
-If you would like to use the knitr template, the function `create_knitr_thesis` is what you want. This function takes in one argument, `direc`, which is the full path to where you want the directory to be created (You do not want to create the directory beforehand). When the function is run, the contents of the template will be copied to the new directory. 
+If you would like to use the knitr template, the function `create_knitr_thesis` is what you want. This function takes in one argument, `direc`, which is the full path to where you want the template to reside. If the directory exists, the template will be copied to the location. If the path points to directory that does not exist, the function will create that directory and then copy the template to that location. 
 
 The template contains `thesis.Rproj`, which if opened in RStudio will open an R project containing the thesis template. The main advantage to using this project format is the document `thesis.Rnw` is set as the root document. This means that no matter which document you are editing, if you compile the document (CTRL+SHIFT+K), the root document will compile.
 
 ### Latex
 
-If you would like to use the latex template, the function `create_latex_thesis` is what you want. This function takes in one argument, `direc`, which is the full path to where you want the directory to be created (You do not want to create the directory beforehand). When the function is run, the contents of the template will be copied to the new directory. 
+If you would like to use the latex template, the function `create_latex_thesis` is what you want. This function also takes in one argument, `direc`, which is the full path to where you want the template to reside. This function will also create the directory specified in the `direc` argument if it does not exist.
 
 The template contains `thesis.Rproj`, which if opened in RStudio will open an R project containing the thesis template. The main advantage to using this project format is the document `thesis.tex` is set as the root document. This means that no matter which document you are editing, if you compile the document (CTRL+SHIFT+K), the root document will compile.
