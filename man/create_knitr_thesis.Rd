@@ -7,7 +7,7 @@
 create_knitr_thesis(direc)
 }
 \arguments{
-\item{direc}{path to a directory (not yet created) where the template will reside}
+\item{direc}{path to a directory where the template will reside. If the directory does not exist, the function will create it.}
 }
 \value{
 nothing

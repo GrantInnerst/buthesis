@@ -7,11 +7,11 @@
 create_latex_thesis(direc)
 }
 \arguments{
-\item{direc}{path to a directory (not yet created) where the template will reside}
+\item{direc}{path to a directory where the template will reside. If the directory does not exist, the function will create it.}
 }
 \value{
 nothing
 }
 \description{
-This function creates a specified directory and populates the directory with the knitr template.
+This function creates a specified directory and populates the directory with the latex template.
 }
