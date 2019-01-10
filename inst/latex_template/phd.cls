@@ -122,7 +122,7 @@
 \newcommand*{\th@OtherSecHeadStyles}{\if@thInHeading\normalsize\th@HdFnt\fi}
 
 
-\renewcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi                 
+\renewcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
                     \thispagestyle{plain}%
                     \global\@topnum\z@
                     \@afterindentfalse
@@ -143,7 +143,7 @@
                     \@makechapterhead{#2}%
                     \@afterheading
                     }
-\def\@makechapterhead#1{ 
+\def\@makechapterhead#1{
     \vspace*{0.5in} {  \parindent 0pt \centering
      \MakeUppercase{\@chapapp{}} \arabicText{\thechapter}
      \\  #1  \\  } } %SPACING BETWEEN CHAPTER HEADING THE CHAPTER BODY ##########
@@ -151,13 +151,13 @@
 
 \def\@schapter#1{\if@twocolumn
                    \@topnewpage[\@makeschapterhead{#1}]%
-                 \else                
+                 \else
                    \@makeschapterhead{#1}%
                    \@afterheading
                  \fi}
 \def\@makeschapterhead#1{%
   \vspace*{0pt}%
-  {\parindent \z@ \raggedright  
+  {\parindent \z@ \raggedright
     \normalfont
     \interlinepenalty\@M
     \Huge \bfseries  #1\par\nobreak
@@ -240,11 +240,11 @@
     \setlength{\topmargin}{.3in}%moves text and number was .295
     \setlength{\headheight}{0in} %was 0.2
     \setlength{\headsep}{0.40625in}%was 0.138in; moves text only
-    \setlength{\topskip}{0in}% first line, down from page number; 
+    \setlength{\topskip}{0in}% first line, down from page number;
                                 %moves text only
    \setlength{\textheight}{8.9in}
    %\setlength{\textheight}{8.4375in}
-    \setlength{\footskip}{0.345in} %footer page number 
+    \setlength{\footskip}{0.345in} %footer page number
                 %sets length for bottom page nos was .335
     \setlength{\oddsidemargin}{.255in} %was.55
     \setlength{\evensidemargin}{.155in} %was .55
@@ -270,7 +270,7 @@
     \setcounter{tocdepth}{2}
     \setcounter{secnumdepth}{\value{th@SecNum}}
 
-    
+
 % Set length of hanging indentation for bibliography entries.
 %
 %\newlength{\bibhang}
@@ -284,7 +284,7 @@
 \singlespace
  \list
  {
- [\arabic{enumi}]} {\settowidth\labelwidth{[#1]} 
+ [\arabic{enumi}]} {\settowidth\labelwidth{[#1]}
  \leftmargin\labelwidth
 \leftmargin\labelsep
 \leftmargin\bibindent
@@ -298,17 +298,17 @@
  \sfcode`\.=1000\relax
  %\advance\leftmargin\labelsep
  %\usecounter{enumi}} \def\newblock{\hskip .11em plus .33em minus -.07em}
- %\sloppy \sfcode`\.=1000\relax 
+ %\sloppy \sfcode`\.=1000\relax
  }
 
 %\let\endthebibliography=\endlist
 
-%\newenvironment{Bibliography}{  
+%\newenvironment{Bibliography}{
 %    \begin{thebibliography}{99}
 %     }{\end{thebibliography}}
 }
 
-    
+
 
 % ADDITIONAL STUFF
 \setcounter{tocdepth}{2}
@@ -337,7 +337,7 @@
 \renewcommand*{\tablename}{\small Table}
 \newcommand*{\figurenameToC}{\normalsize\th@HdFnt \normalfont}
 \newcommand*{\tablenameToC}{\normalsize\th@HdFnt\normalfont}
- 
+
 %was.37 %TOC TOP SPACING
 \renewcommand*{\contentsname}{\th@ChapHead{\vspace*{0.37in}TABLE OF CONTENTS\vspace*{-0.70in}}}
 \renewcommand*{\listfigurename}{\th@ChapHead{\vspace*{0.37in}LIST OF FIGURES\vspace*{-0.68in}}}
@@ -346,7 +346,7 @@
 \renewcommand*{\bibname}{\th@ChapHead{\vspace*{0.67in}BIBLIOGRAPHY\vspace*{-.80in}}}
 \renewcommand*{\chaptername}{\th@ChapHead{\vspace*{-0.26in}CHAPTER}\vspace*{0.26in}\hspace*{-.1in}} %KT added hspace
 \newcommand*{\chapternameToC}{
-    \normalsize\th@HdFnt \normalfont} 
+    \normalsize\th@HdFnt \normalfont}
 \newcommand*{\bibnameToC}{
     \normalsize\th@HdFnt\vspace*{-0.01in}BIBLIOGRAPHY\normalfont}
 \newcommand*{\appendixnameToC}{
@@ -360,7 +360,7 @@
     {\protect\tablenameToC}{\protect\relax}}
 \addtocontents{toc}{\protect\contentsline {part}
     {\protect\chapternameToC}{\protect\relax}}
-    
+
 
 
 % NUMBERING STYLES, DEFAULT VALUES
@@ -475,7 +475,7 @@
 %   \setcounter{th@SectionSave}{\value{section}}
 %    \th@OldAppCmd
 %    \setcounter{section}{0}%
-%    \setcounter{subsection}{0}% 
+%    \setcounter{subsection}{0}%
 %    \addtocontents{toc}{\protect\contentsline {part}
 %        {\protect\hspace*{-0.0625in}\appendixnameToC}{\protect\relax}}
 %    \renewcommand*{\th@DefTheChapter}{\Alph{chapter}}
@@ -531,7 +531,7 @@
 % of the command.
 
 \newcommand*{\th@Heading}[6]{
-        \vspace{-0.1in}  
+        \vspace{-0.1in}
     \@thInHeadingtrue
     % Alter the '\the...' command.
     \@namedef{the#5}{\protect#2 #6}
@@ -574,12 +574,12 @@
 
 \newcommand*{\th@Section}[2][\th@DefArg]{
         \@Sectiontrue
-    \@UseStarCmdfalse     
+    \@UseStarCmdfalse
     \@CenterHeadingtrue\@Sectiontrue
     \th@Heading{\th@OldSection}{\th@SectionStyle}{#1}
-    {{\it #2}} 
-        {section}{\th@DefTheSection}     
-    \normalsize\normalfont 
+    {{\it #2}}
+        {section}{\th@DefTheSection}
+    \normalsize\normalfont
 }
 \newcommand*{\th@SectionS}[1]{
     \@UseStarCmdtrue
@@ -705,13 +705,13 @@
 }
 %by Daniel
 
-\newcommand*{\th@signature}[1]{ 
+\newcommand*{\th@signature}[1]{
         \begin{center}
         \normalsize
         \vspace*{2.5ex}
         \vrule width 80mm height 0.2mm
         \\
-        #1 
+        #1
         \end{center}
 }
 
@@ -753,31 +753,31 @@
         \vspace*{1.08in} % modified by John was .995
     \begin{center}
                 ABSTRACT
-                \ \\ 
+                \ \\
         \singlespacing
         \thesisTitle
                 \ \\
          \doublespacing
                 \thesisAuthorName, Ph.D.
                 \ \\
-       Chairperson: David J. Kahle, Ph.D.
+       Chairperson: \thesisMentor
     %\end{list}
         \vspace*{0.07in}
         \end{center}
         %\doublespacing
-    \th@abstract    % finally, the actual abstract         
+    \th@abstract    % finally, the actual abstract
 
 }
 
 %\newcommand*{\thesisTitlePage}{
-%        \thispagestyle{empty} 
+%        \thispagestyle{empty}
 %    \doublespacing
 %        \pagenumbering{roman}
 %        \vspace*{1.055in} %modified by John
 %    \begin{center} \thesisTitle \end{center}
 %        \vspace*{1.33in}%modified by Daniel
-%    \begin{center} A Dissertation Submitted  to the Graduate Faculty of\\ 
-%    Baylor University\\ 
+%    \begin{center} A Dissertation Submitted  to the Graduate Faculty of\\
+%    Baylor University\\
 %        in Partial Fulfillment of the\\
 %        Requirements for the Degree\\
 %        of\\
@@ -795,13 +795,13 @@
 
 
 %%
-%% Make the signature page modified by John 
+%% Make the signature page modified by John
 \newcommand*{\thesisMakeSignaturePage}{
 %    \enlargethispage{1in}% creates .75" from bottom of dean name to page bottom
 %                         % and 15/16" = .9375" from bottom of sig line to page bottom
     \enlargethispage{.5in}% creates .75" from bottom of dean name to page bottom
                          % and 15/16" = .9375" from bottom of sig line to page bottom
-        \thispagestyle{empty}   
+        \thispagestyle{empty}
     \singlespacing
     \begin{center}
 \doublespacing
@@ -814,11 +814,11 @@
         \thesisAuthorName, \yourDegrees
         \ \\
         A Dissertation
-        \ \\     
+        \ \\
         Approved by the Department of Statistical Science
 
  \singlespacing
- 
+
     \th@signature{\thesisDeptChair , Chairperson}
 
         Submitted to the Graduate Faculty of\\
@@ -829,7 +829,7 @@
     \end{center}
         \vspace*{0.40in}
     \begin{flushleft}
-\hspace*{0.4in} 
+\hspace*{0.4in}
 \begin{tabular*}{80mm}[t]{c}
         Approved by the Dissertation Committee  \\
         \\
@@ -840,28 +840,28 @@
 %    \thesisReader  \\ % REQUIRED.
 %    \\
 \\ \hline
-    \th@readerThree \\ % optional 
+    \th@readerThree \\ % optional
     \\
 \\ \hline
-    \th@readerFour \\ % optional 
+    \th@readerFour \\ % optional
     \\
 \\ \hline
-    \th@readerFive \\ % optional 
+    \th@readerFive \\ % optional
         \\
 \\ \hline
-    \th@readerSix \\ % optional 
+    \th@readerSix \\ % optional
 \end{tabular*}
     \end{flushleft}
     %\vspace*{.0000000025in}
     \vfill
-    
+
     \begin{flushright}
 \begin{tabular*}{65mm}{c}
         Accepted by the Graduate School \\
         \thesisConfDate \\
 \\
 \\ \hline
-        \thesisGraduateDean , Dean 
+        \thesisGraduateDean , Dean
 \end{tabular*}
     \end{flushright}
     \vspace*{.10in}
@@ -870,7 +870,7 @@
     \scriptsize{\it {Page bearing signatures is kept on file in the Graduate School.}}
 %\end{tabular*}
 \end{center}
-        \thispagestyle{empty}      
+        \thispagestyle{empty}
         \pagebreak
 }
 
@@ -884,7 +884,7 @@
     \if@makeThesisCopyrightPage
       \vspace*{8.05in} %modified by John
       %next line modified by Daniel
-      \begin{center} 
+      \begin{center}
       Copyright \copyright \ \the\year\ by \thesisAuthorName \\
           \vspace{0.1in}
       All rights reserved
@@ -903,12 +903,12 @@
 % Make the signature page
 % modified by Daniel
 %\newcommand*{\thesisMakeSignaturePage}{
-   %     \thispagestyle{empty}   
+   %     \thispagestyle{empty}
     %\singlespacing
     %    \vspace*{1.20625in}%modified by John
     %\begin{center}
      %   Approved by the Department of Mathematics:
- 
+
     %\th@signature{\thesisDeptChair , Chairperson}
 
      %   \vspace*{1.7in}
@@ -925,20 +925,20 @@
      %           {\th@signature{\th@readerFour}} % optional
 
    % \ifthenelse{\equal{\th@readerFive}{none}}{\relax}
-               % {\th@signature{\th@readerFive}} % optional    
+               % {\th@signature{\th@readerFive}} % optional
        % \vspace*{1.3in}%modified by John
         %Approved by the Graduate School:
 
         %\th@signature{\thesisGraduateDean , Dean}
     %\end{center}
-     %   \thispagestyle{empty}      
+     %   \thispagestyle{empty}
       %  \pagebreak
 %}
 
 
 
 \newcommand{\th@Acknowledgementpage}{
-     \thispagestyle{plain}   
+     \thispagestyle{plain}
     \if@makeAcknowledgements
                 %modified by Daniel
         \addcontentsline{toc}{part}{\normalfont\normalsize  \vskip -0.35in ACKNOWLEDGMENTS\vspace*{-.35in}}
@@ -996,7 +996,7 @@
  \setlength{\cftbeforefigskip}{10pt}
  \setlength{\cftfigindent}{0.0in}
  \renewcommand{\@tocrmarg}{2.5em plus1fil}
-    \listoffigures   
+    \listoffigures
 }
 
 \newcommand{\th@LoTpage}{
@@ -1025,29 +1025,29 @@
         \thesisCopyrightPage
          %\addtocounter{page}{-1}
          \setcounter{th@storepage}{\value{page}}
-                \pagestyle{plain}    
-        \th@ToCpage 
+                \pagestyle{plain}
+        \th@ToCpage
         \pagebreak
-                \pagestyle{plain} 
+                \pagestyle{plain}
         \if@makenoLoF
           \relax
         \else
          \th@LoFpage
                 \pagebreak
                 \pagestyle{plain}
-                \fi 
+                \fi
         \if@makenoLoT
           \relax
         \else
           \th@LoTpage
                   \pagebreak
           \fi
-        \th@Acknowledgementpage 
-            
+        \th@Acknowledgementpage
+
         \th@Dedicationpage
-        
+
     \fi
-    
+
     \pagestyle{plain}
 }
 
@@ -1138,16 +1138,16 @@
     \typeout{Putting page number on short LoT}
 }
 %From here on, is all modified by Daniel
-\renewcommand{\section}{\@startsection {section}{1}{0pt}%         
+\renewcommand{\section}{\@startsection {section}{1}{0pt}%
          {2.5ex plus 0ex minus 0ex}%
          {0.001ex plus 0ex minus 0ex}%
          {\vspace{0.3in}\centering\normalfont\itshape\normalsize}} %LEVEL 1 HEADER ###################
-\renewcommand{\subsection}{\@startsection {subsection}{2}{0pt}%        
+\renewcommand{\subsection}{\@startsection {subsection}{2}{0pt}%
          {2.5ex plus 0ex minus 0ex}%
          {0.001ex plus 0ex minus 0ex}%
          {\vspace{0.2in}\normalfont\itshape\normalsize}}
 %redefinition of the caption,
-%it should not have a colon after the figure number, 
+%it should not have a colon after the figure number,
 %instead it should have a point
 \long\def\@makecaption#1#2{%
   \vskip\abovecaptionskip
@@ -1161,7 +1161,7 @@
 \vskip\belowcaptionskip}
 
 
-% 
+%
 % %% THIS IS WHAT WAS buthm.sty.
 % %% This is a modified version of the file `amsthm.sty',
 % %% generated with the docstrip utility.
@@ -1225,7 +1225,7 @@
 %   \sfcode`\:1003\sfcode`\;1002\sfcode`\,1001 }
 % \DeclareOption*{\input{\CurrentOption .thm}}
 % \ProcessOptions
-% 
+%
 % \newcommand{\theoremstyle}[1]{%
 %   \@ifundefined{th@#1}{%
 %     \PackageWarning{amsthm}{Unknown theoremstyle `#1'}%
