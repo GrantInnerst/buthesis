@@ -1,5 +1,27 @@
-\chapter{Chapter 3}
+\chapter{Miscellaneous Information}
 
-\section{Third chapter info}
+\section{Widows and Orphans}
 
-This is the third chapter of my dissertation!
+In the dissertation, you must not have any widows or orphans. Widows are when a paragraph-ending line falls at the beginning of the following page and orphans are when a paragraph-opening line falls at the end of the previous page. There are a couple of options to deal with with widows and orphans. One option is to set a higher penalty for widows and orphans with \verb|\widowpenalty| and \verb|\clubpenalty|. This is done in the preamble of your document. A second option, that I recommend and have included in the preamble, is the \verb|nowidow| package. With the \verb|all| option, all widow and orphan problems should be fixed.
+
+\section{Changes I Made}
+
+This section contains the major changes I made to the preamble and .cls file so that you can fix my mistakes in the future!
+
+\begin{itemize}
+	\item Section Headings
+	\begin{itemize}
+		\item Most of spacing can be changed by modifying the proper \verb|\renewcommand|. They are currently in the middle of the .cls file. These are for level 3,4, and 5 headings
+		\item For level 1 and 2 headings, look to where they renew the chapter command. I changed the spacing where the \verb|\chapter| command is defined in the .cls file.
+	\end{itemize}
+	\item Captions
+	\begin{itemize}
+		\item I loaded the caption package and used \verb|\captionsetup| to setup up the proper options for both tables and figures.
+	\end{itemize}
+	\item Algorithms
+	\begin{itemize}
+		\item For algorithms, i used the algorithm2e package and two commands to set the proper options for captions.
+	\end{itemize}
+\end{itemize}
+
+I added some references here so that the bibliography would show up \citep{agresti2003, fisher1925statistical, darroch1980markov}.

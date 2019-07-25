@@ -1,13 +1,23 @@
 \documentclass{phd}
+
+% makes sure the abstract page is at correct height
 \voffset=-.6875in
 \setlength{\textheight}{9.65in}
 
 %% packages
 \usepackage{amsfonts, amssymb, amsmath, amsthm, latexsym, natbib, graphicx,
             rotating, float, listings, booktabs, url, bm, subfig, gensymb,
-            multirow, array, dcolumn, framed}
+            multirow, array, dcolumn, framed, xcolor}
+\usepackage{caption}
+\captionsetup[table]{position=top,skip=14pt,justification=centering,labelsep=period}
+\captionsetup[figure]{position=bottom,skip=2pt,labelsep=period}
 \usepackage[linesnumbered,boxed]{algorithm2e}
+\SetAlCapSkip{.2in}
+\SetAlgoCaptionSeparator{.} 
+\usepackage[all]{nowidow}
 \newcolumntype{d}[1]{D{.}{\cdot}{#1} }
+
+
 
 %% input the macros
 % \input{macros}
@@ -30,7 +40,6 @@
 \readerThree{Other Reader, Ph.D.}
 \readerFour{Other Reader, Ph.D.}
 \readerFive{Other Reader, Ph.D.}
-\readerSix{Other Reader, Ph.D.}
 
 \confDate{The conferral date}   % month and year of actual graduation
 

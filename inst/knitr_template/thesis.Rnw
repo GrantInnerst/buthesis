@@ -5,8 +5,14 @@
 %% packages
 \usepackage{amsfonts, amssymb, amsmath, amsthm, latexsym, natbib, graphicx,
             rotating, float, listings, booktabs, url, bm, subfig, gensymb,
-            multirow, array, dcolumn, framed}
+            multirow, array, dcolumn, framed, xcolor}
+\usepackage{caption}
+\captionsetup[table]{position=top,skip=14pt,justification=centering,labelsep=period}
+\captionsetup[figure]{position=bottom,skip=2pt,labelsep=period}
 \usepackage[linesnumbered,boxed]{algorithm2e}
+\SetAlCapSkip{.2in}
+\SetAlgoCaptionSeparator{.}
+\usepackage[all]{nowidow}
 \newcolumntype{d}[1]{D{.}{\cdot}{#1} }
 
 %% input the macros
