@@ -36,7 +36,6 @@
 \readerThree{Other Reader, Ph.D.}
 \readerFour{Other Reader, Ph.D.}
 \readerFive{Other Reader, Ph.D.}
-\readerSix{Other Reader, Ph.D.}
 
 \confDate{The conferral date}   % month and year of actual graduation
 
