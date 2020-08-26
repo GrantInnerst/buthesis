@@ -146,7 +146,7 @@
 \def\@makechapterhead#1{
     \vspace*{0.26in} {  \parindent 0pt \centering
      \MakeUppercase{\@chapapp{}} \arabicText{\thechapter}
-     \\  #1  \\ \vspace*{0.18in} } } %SPACING BETWEEN CHAPTER HEADING THE CHAPTER BODY ##########
+     \\  \singlespacing{#1}  \\ \vspace*{0.18in} } } %SPACING BETWEEN CHAPTER HEADING THE CHAPTER BODY ##########
 
 
 \def\@schapter#1{\if@twocolumn
